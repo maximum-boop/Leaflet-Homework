@@ -90,6 +90,9 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     }
   }).addTo(map);
 
+  const marker = L.marker([7.9465, 1.0232]).addTo(map);
+// Add popup message
+marker.bindPopup('<h1>Here is the center of my map! Ghana</h1>');
   // Here we create a legend control object.
   var legend = L.control({
     position: "topright"
